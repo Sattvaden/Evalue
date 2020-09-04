@@ -4,9 +4,9 @@ public class OutputThread extends Thread {
 
     private static final int DELAY = 60000;
 
-    Packages packages;
+    private Packages packages;
 
-    public OutputThread(Packages packages) {
+    OutputThread(Packages packages) {
 
         this.packages = packages;
     }

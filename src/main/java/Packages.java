@@ -13,9 +13,9 @@ public class Packages {
 
     private static final String SPLIT_REG_EXP = " ";
 
-    Map<String, Double> data;
-    String fileName;
-    BufferedWriter writer;
+    private Map<String, Double> data;
+    private String fileName;
+    private BufferedWriter writer;
 
     Packages(String fileName) throws IOException {
         this.fileName = fileName;
@@ -25,7 +25,7 @@ public class Packages {
         loadPackages();
     }
 
-    void logPackage(String inputLine) throws IOException {
+    private void logPackage(String inputLine) throws IOException {
 
         writer.write(inputLine + "\n");
     }
