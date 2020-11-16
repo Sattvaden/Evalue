@@ -11,6 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("Hello from submodule");
         if (args.length == 0) {
             System.err.println(NO_ARGUMENT_MESSAGE);
             System.exit(1);
