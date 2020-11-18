@@ -29,7 +29,7 @@ class PackagesTest {
     @Test
     void  testLoadPackagesFromFile() throws IOException {
         Packages packages = new Packages("src/test/resources/data.txt");
-        String[] expected = new String[]{"08801 10.800", "55555 8.000", "11111 5.900", "90005 5.000", "23432 3.000", "22233 2.000"};
+        String[] expected = new String[]{"08802 10.800", "55555 8.000", "11111 5.900", "90005 5.000", "23432 3.000", "22233 2.000"};
 
         Assertions.assertArrayEquals(packages.generateOutput().toArray(), expected);
     }
