@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("pull request 3");
+        System.out.println("no trigger out of resource folder");
         if (args.length == 0) {
             System.err.println(NO_ARGUMENT_MESSAGE);
             System.exit(1);
