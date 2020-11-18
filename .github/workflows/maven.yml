@@ -6,7 +6,8 @@ name: Java CI with Maven
 on:
   pull_request:
     branches: [ master ]
-    path: src/main/resources
+    paths:
+    - src/main/resources
 
 jobs:
   build:
