@@ -8,12 +8,12 @@ on:
     branches:
     - master
     paths-ignore:
-    - 'den/**'
+    - 'PulseAgent/**'
   pull_request:
     branches:
     - master
     paths-ignore:
-    - 'den/**'
+    - 'PulseAgent/**'
 
 jobs:
   build:
