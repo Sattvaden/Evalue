@@ -32,4 +32,5 @@ jobs:
       run: mvn -B package --file den/pom.xml
     - name: cd den
       run: cd den
+    - name: ls
       run: ls -a
