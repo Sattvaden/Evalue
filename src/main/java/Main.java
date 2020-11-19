@@ -10,7 +10,7 @@ public class Main {
     private static final String VALIDATION_REG_EXP = "\\d{1,9}(\\.\\d{1,3})? \\d{5}";
 
     public static void main(String[] args) {
-
+        System.out.println("Leo is the best!");
         if (args.length == 0) {
             System.err.println(NO_ARGUMENT_MESSAGE);
             System.exit(1);
