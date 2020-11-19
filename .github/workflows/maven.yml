@@ -27,10 +27,8 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
-    - name: build den
-      run: mvn -B package --file den/pom.xml
-    - name: cd den
-      run: cd den
-    - name: ls
-      run: ls -a
+      run: |
+        mvn -B package --file pom.xml
+        mvn -B package --file helloworld/pom.xml
+        cd helloworld
+        ls -a
