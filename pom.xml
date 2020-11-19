@@ -6,6 +6,7 @@
 
     <groupId>org.evalue.task</groupId>
     <artifactId>EvalueTask</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
     <build>
         <plugins>
@@ -36,6 +37,9 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>den</module>
+    </modules>
 
     <dependencies>
         <dependency>
