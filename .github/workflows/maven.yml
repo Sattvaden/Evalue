@@ -8,12 +8,12 @@ on:
     branches:
     - master
     paths-ignore:
-    - 'PulseAgent/**'
+    - PulseAgent/**
   pull_request:
     branches:
     - master
     paths-ignore:
-    - 'PulseAgent/**'
+    - PulseAgent/**
 
 jobs:
   build:
