@@ -3,15 +3,10 @@
 
 name: Java CI with Maven
 
-on:
-  push:
+on: [push, pull_request]
     branches: [ master ]
-    paths:
-    - 'src/main/java/**'
-  pull_request:
-    branches: [ master ]
-    paths:
-    - 'src/main/java/**'
+    paths-ignore:
+    - 'den/**'
 
 jobs:
   build:
