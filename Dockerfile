@@ -15,7 +15,7 @@ RUN mvn package -DskipTests
 # https://hub.docker.com/r/adoptopenjdk/openjdk8
 # https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds
 FROM adoptopenjdk/openjdk11:alpine-slim
-
+RUN ls -a
 # Copy the jar to the production image from the builder stage.
 COPY --from=builder target/Evalue-1.0.jar /Evalue.jar
 
