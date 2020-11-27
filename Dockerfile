@@ -16,7 +16,7 @@ RUN mvn package -DskipTests
 # https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds
 FROM adoptopenjdk/openjdk11:alpine-slim
 # Copy the jar to the production image from the builder stage.
-COPY --from=builder /app/target/Evalue-1.0.jar /Evalue.jar
+COPY --from=builder /app/target/project-1.jar /project.jar
 
 # Run the web service on container startup.
 CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/Evalue.jar"]
