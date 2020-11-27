@@ -6,7 +6,7 @@ on:
     - master
 
 env:
-  PROJECT_ID: "denis-294317"
+  PROJECT_ID: ${{ secrets.RUN_PROJECT }}
   RUN_REGION: us-central1
   SERVICE_NAME: evalue
 
@@ -24,7 +24,7 @@ jobs:
       with:
         version: '290.0.1'
         service_account_key: ${{ secrets.RUN_SA_KEY }}
-        project_id: $PROJECT_ID
+        project_id: ${{ secrets.RUN_PROJECT }}
 
     # Build and push image to Google Container Registry
     - name: Build
