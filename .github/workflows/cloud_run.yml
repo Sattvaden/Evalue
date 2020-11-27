@@ -6,7 +6,7 @@ on:
     - master
 
 env:
-  PROJECT_ID: ${{ secrets.RUN_PROJECT }}
+  PROJECT_ID: "denis-294317"
   RUN_REGION: us-central1
   SERVICE_NAME: evalue
 
