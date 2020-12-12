@@ -19,4 +19,4 @@ FROM adoptopenjdk/openjdk11:alpine-slim
 COPY --from=builder /app/target/project-1.jar /project.jar
 
 # Run the web service on container startup.
-CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/Evalue.jar"]
+CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/project.jar"]
